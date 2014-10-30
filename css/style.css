@@ -305,8 +305,21 @@ a.social-btn:hover { color: #bd9213 }
 .col-w450 { width: 450px }
 .col-w300 { width: 300px }
 .col-w200 { width: 200px; margin-right: 50px; }
-.col-allw300 { width: 300px; float: left; margin-right: 30px }
+.col-allw300 { width: 300px; /*float: left;*/ margin-right: 30px }
 .col-last { margin: 0 }
+
+@media (min-width: 660px){
+	.col-allw300{
+		float:left;
+	}
+}
+
+@media (max-width: 660px){
+	.col-allw300 {
+		margin: 0 15em;
+	}
+}
+
 
 
 .fp-lp-box {
@@ -476,7 +489,7 @@ a.social-btn:hover { color: #bd9213 }
 	max-width: 960px;
 	padding: 30px 10px;
 	color: #8b773a;
-	/*margin: 0 auto;*/
+	margin: 0 auto;
 }
 
 @media (max-width: 660px){
